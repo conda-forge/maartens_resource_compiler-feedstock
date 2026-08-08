@@ -7,11 +7,11 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://github.com/mhekkel/mrc/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 9182e33805a85bb42369a675a6602684aa037587cfc81b40154dfa8440a1737e
+  url: https://forge.hekkelman.net/maarten/mrc/archive/v${{ version }}.tar.gz
+  sha256: 0d638fb534161d56906b30099891e95c6286e0e96a33cdfaa613f92234a7adfd
 
 build:
-  number: 0
+  number: 1
   skip:
     - osx
   script:
@@ -51,9 +51,9 @@ tests:
       - mrc --header -o mrsrc.h
 
 about:
-  homepage: https://github.com/mhekkel/mrc
-  repository: https://github.com/mhekkel/mrc
-  documentation: https://github.com/mhekkel/mrc/blob/v${{ version }}/README.md
+  homepage: https://forge.hekkelman.net/maarten/mrc
+  repository: https://forge.hekkelman.net/maarten/mrc
+  documentation: https://forge.hekkelman.net/maarten/mrc/src/tag/v${{ version }}/README.md
   license: BSD-2-Clause
   license_file: LICENSE
   summary: "mrc - Maartens Resource Compiler"
