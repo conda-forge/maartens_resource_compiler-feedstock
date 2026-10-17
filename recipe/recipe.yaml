@@ -11,7 +11,7 @@ source:
   sha256: 0d638fb534161d56906b30099891e95c6286e0e96a33cdfaa613f92234a7adfd
 
 build:
-  number: 1
+  number: 2
   skip:
     - osx
   script:
@@ -43,7 +43,10 @@ requirements:
     - pkg-config
   host:
     - catch2
-    - libmcfp
+    - libmcfp >=2.1.1
+  ignore_run_exports:
+    from:
+      - catch2
 
 tests:
   - script:
