@@ -45,7 +45,7 @@ requirements:
     - catch2
     - libmcfp >=2.1.1
   ignore_run_exports:
-    from:
+    from_package:
       - catch2
 
 tests:
